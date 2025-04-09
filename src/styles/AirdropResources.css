@@ -22,6 +22,7 @@
   }
   
   .et_pb_text h2 {
+    text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
@@ -31,7 +32,7 @@
   }
   
   .scrollable-content {
-    max-height: 600px;
+    max-height: 800px;
     overflow-y: auto;
     padding-right: 0.5rem;
     scrollbar-width: thin; /* Firefox के लिए */
@@ -198,8 +199,11 @@
   }
   
   .et_pb_button {
+    height: 100px;
+    width: 300px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     padding: 0.5rem 1rem;
     background: #2a3435;
     color: white;
