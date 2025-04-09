@@ -1,0 +1,279 @@
+.portal-to-bitcoin {
+    padding: 2rem;
+    background: #1c2526; /* डार्क बैकग्राउंड */
+    color: white;
+  }
+  
+  .et_pb_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title-column,
+  .social-column,
+  .status-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .et_pb_post_title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .card-socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #3a4445;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-item i {
+    font-size: 1.2rem;
+  }
+  
+  .card-status {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .post-status {
+    padding: 0.3rem 0.8rem;
+    background: #3a4445;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+  }
+  
+  .post-status.featured {
+    background: #00b4d8;
+  }
+  
+  .description-row {
+    margin-top: 2rem;
+  }
+  
+  .description-column {
+    flex: 3;
+    min-width: 300px;
+  }
+  
+  .image-column {
+    flex: 2;
+    min-width: 200px;
+  }
+  
+  .airdrop-description p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .airdrop-description a {
+    color: #00b4d8;
+    text-decoration: none;
+  }
+  
+  .airdrop-description a:hover {
+    text-decoration: underline;
+  }
+  
+  .airdrop-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .details-row {
+    margin-top: 2rem;
+  }
+  
+  .left-card-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .right-details-column {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .airdrop-left-card {
+    background: #2a3435;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .airdrop-left-card .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .airdrop-left-card .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .airdrop-left-card .title {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .airdrop-left-card .footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .btn-project-website {
+    padding: 0.5rem 1rem;
+    background: #00b4d8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-project-website:hover {
+    background: #0096c7;
+  }
+  
+  .airdrop-token-card {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .airdrop-token-card .card {
+    flex: 1;
+    background: #2a3435;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-value {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-description {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+  }
+  
+  .airdrop-steps-card {
+    background: #2a3435;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .airdrop-steps-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .step-list {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .step-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  .step-list a {
+    color: #00b4d8;
+    text-decoration: none;
+  }
+  
+  .step-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .airdrop-step-description p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .airdrop-step-description a {
+    color: #00b4d8;
+    text-decoration: none;
+  }
+  
+  .airdrop-step-description a:hover {
+    text-decoration: underline;
+  }
+  
+  .buttons {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  .previous-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: #3a4445;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .previous-button i {
+    margin-right: 0.5rem;
+  }
+  
+  .previous-button:hover {
+    background: #4a5455;
+  }
+  
+  /* रेस्पॉन्सिव डिज़ाइन */
+  @media (max-width: 768px) {
+    .et_pb_row {
+      flex-direction: column;
+    }
+  
+    .title-column,
+    .social-column,
+    .status-column,
+    .description-column,
+    .image-column,
+    .left-card-column,
+    .right-details-column {
+      min-width: 100%;
+    }
+  
+    .card-socials,
+    .card-status {
+      justify-content: center;
+    }
+  
+    .airdrop-token-card {
+      flex-direction: column;
+    }
+  }

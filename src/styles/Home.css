@@ -1,0 +1,127 @@
+.home {
+  background: #1c2526; /* डार्क बैकग्राउंड */
+  color: white;
+}
+
+/* हीरो सेक्शन */
+.hero-section {
+  background: linear-gradient(90deg, #1c2526 0%, #2a3435 100%);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #ff00ff, #00b4d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  text-align: center;
+}
+
+.highlight {
+  background: none;
+  -webkit-text-fill-color: initial;
+  color: #ff00ff;
+}
+
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end) forwards;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn {
+  background: transparent;
+  border: 2px solid #00b4d8;
+  color: #00b4d8;
+}
+
+.primary-btn:hover {
+  background: #00b4d8;
+  color: white;
+}
+
+.secondary-btn {
+  background: #2a3435;
+  border: 2px solid #2a3435;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background: #3a4445;
+  border-color: #3a4445;
+}
+
+/* मौजूदा Featured Airdrops सेक्शन */
+.featured-section {
+  margin: 2rem 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.airdrop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* रेस्पॉन्सिव डिज़ाइन */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-section {
+    padding: 1rem;
+  }
+
+  .featured-section {
+    padding: 1rem;
+  }
+}

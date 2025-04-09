@@ -1,0 +1,10 @@
+.latest-news {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .latest-news {
+      padding: 1rem;
+    }
+  }

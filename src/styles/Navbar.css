@@ -1,0 +1,144 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1c2526; /* इमेज के अनुसार डार्क बैकग्राउंड */
+  color: white;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00b4d8; /* इमेज के अनुसार सियान रंग */
+  font-family: 'Dancing Script', cursive;/* इमेज के अनुसार स्क्रिप्ट फॉन्ट */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+  position: relative;
+}
+
+.nav-links a {
+  color: #b0b0b0; /* इमेज के अनुसार ग्रे रंग */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #00b4d8; /* होवर पर सियान रंग */
+}
+
+/* ड्रॉपडाउन स्टाइल */
+.dropdown-toggle {
+  color: #b0b0b0;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dropdown-toggle:hover {
+  color: #00b4d8;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1c2526;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  min-width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+  color: #b0b0b0;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  color: #00b4d8;
+}
+
+/* टॉगल बटन */
+.toggle-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* मोबाइल स्क्रीन के लिए स्टाइलिंग */
+@media (max-width: 768px) {
+  .toggle-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1c2526;
+    padding: 1rem 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  /* ड्रॉपडाउन मोबाइल में */
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-toggle {
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background-color: #2a3435; /* मोबाइल में हल्का डार्क बैकग्राउंड */
+    box-shadow: none;
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none; /* मोबाइल में होवर काम नहीं करता */
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block; /* टॉगल के लिए */
+  }
+}

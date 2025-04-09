@@ -1,0 +1,10 @@
+.cointracker {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .cointracker {
+      padding: 1rem;
+    }
+  }

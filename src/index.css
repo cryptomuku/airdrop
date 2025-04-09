@@ -1,0 +1,11 @@
+*{
+    margin: 0%;
+    background: #1c2526;
+}
+
+.website{
+    max-width: 1280px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
