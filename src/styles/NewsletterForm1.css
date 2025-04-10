@@ -1,0 +1,292 @@
+.newsletter-form {
+    padding: 2rem;
+    background: #1c2526; /* डार्क बैकग्राउंड */
+    color: white;
+  }
+  
+  .et_pb_row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .et_pb_row_10 {
+    gap: 0; /* et_pb_row_1-4_1-2_1-4 के लिए */
+  }
+  
+  .et_pb_column {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .et_pb_row_10 .et_pb_column:nth-child(1),
+  .et_pb_row_10 .et_pb_column:nth-child(3) {
+    flex: 1 1 25%; /* 1/4 कॉलम */
+  }
+  
+  .et_pb_row_10 .et_pb_column:nth-child(2) {
+    flex: 1 1 50%; /* 1/2 कॉलम */
+  }
+  
+  .et_pb_text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description p {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #e6ebf6;
+  }
+  
+  .form-container {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  
+  .inline-container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .emailoctopus-form-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .emailoctopus-form {
+    --label-size: 12px;
+    --field-colour: #1c1e27;
+    --label-colour: #e6ebf6;
+    --button-colour: #2cd4d9;
+    --button-text-colour: #1c1e27;
+    --field-border-colour: #e6ebf6;
+  }
+  
+  .main-form {
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .main-form .emailoctopus-form-row {
+    flex-grow: 1;
+    min-width: 200px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  .main-form .btn {
+    flex-grow: 1;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  .emailoctopus-form-row {
+    margin-bottom: 18px;
+  }
+  
+  .emailoctopus-form-row-consent {
+    margin-bottom: 18px;
+  }
+  
+  .emailoctopus-form label {
+    color: var(--label-colour);
+    font-family: inherit;
+    font-size: var(--label-size);
+  }
+  
+  .emailoctopus-form label:empty {
+    display: none !important;
+  }
+  
+  .emailoctopus-form input:not([type="submit"]) {
+    background-color: var(--field-colour);
+    border-color: var(--field-border-colour);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e6ebf6;
+  }
+  
+  .emailoctopus-form input[type="submit"] {
+    background-color: var(--button-colour);
+    border-color: var(--button-colour);
+    color: var(--button-text-colour);
+    font-size: 1rem;
+  }
+  
+  .emailoctopus-form input[type="submit"]:hover {
+    background-color: #26c6cc;
+    border-color: #26c6cc;
+  }
+  
+  .emailoctopus-form-row-hp {
+    left: -5000px;
+    position: absolute;
+  }
+  
+  .emailoctopus-form-row-consent label {
+    display: inline;
+    margin-left: 0.5rem;
+  }
+  
+  .emailoctopus-success-message,
+  .emailoctopus-error-message {
+    color: #e6ebf6 !important;
+    display: block;
+    font-weight: 400;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .form-control {
+    background-clip: padding-box;
+    background-color: #1c1e27;
+    border: 1px solid #e6ebf6;
+    border-radius: 0.25rem;
+    color: #e6ebf6;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    height: calc(1.5em + 0.75rem + 2px);
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 100%;
+  }
+  
+  .form-control:focus {
+    background-color: #1c1e27;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    color: #e6ebf6;
+    outline: 0;
+  }
+  
+  .form-control::placeholder {
+    color: #b0b0b0;
+    opacity: 1;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #1c1e27;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    user-select: none;
+    vertical-align: middle;
+  }
+  
+  .btn-primary {
+    background-color: #2cd4d9;
+    border-color: #2cd4d9;
+    color: #1c1e27;
+  }
+  
+  .btn-primary:hover {
+    background-color: #26c6cc;
+    border-color: #26c6cc;
+    color: #1c1e27;
+  }
+  
+  .w-100 {
+    width: 100% !important;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mastfoot {
+    display: inline-block;
+    font-family: Lato, Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    margin-top: 10px !important;
+  }
+  
+  .mastfoot .inner {
+    text-align: center;
+  }
+  
+  .mastfoot p {
+    background: none;
+    border: none;
+    color: #808c97;
+    display: inline-block;
+    font-size: 14px;
+    margin: auto;
+    padding: 0.5em;
+  }
+  
+  .mastfoot a {
+    color: #808c97;
+    display: inline-block;
+    font-weight: 700;
+    margin-left: 5px;
+    padding-left: 23px;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .mastfoot a:before {
+    background-image: url(https://gallery.eo.page/tentacles/icons/v1/powered-by/otto.svg);
+    background-size: cover;
+    content: "";
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: -4px;
+    width: 18px;
+  }
+  
+  .mastfoot a:hover {
+    color: #808c97 !important;
+  }
+  
+  .empty-column {
+    flex: 1 1 25%;
+    min-width: 0;
+  }
+  
+  /* रेस्पॉन्सिव डिज़ाइन */
+  @media (max-width: 768px) {
+    .et_pb_row {
+      flex-direction: column;
+    }
+  
+    .et_pb_column {
+      min-width: 100%;
+    }
+  
+    .et_pb_row_10 .et_pb_column:nth-child(1),
+    .et_pb_row_10 .et_pb_column:nth-child(3) {
+      display: none;
+    }
+  
+    .et_pb_row_10 .et_pb_column:nth-child(2) {
+      flex: 1 1 100%;
+    }
+  
+    .main-form .emailoctopus-form-row {
+      min-width: 100%;
+    }
+  }

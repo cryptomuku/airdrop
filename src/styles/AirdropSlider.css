@@ -1,150 +1,150 @@
 .airdrop-slider {
-    padding: 2rem;
-    text-align: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.slider-container {
+  overflow: hidden; /* स्लाइडर के बाहर के कार्ड्स छिपाने के लिए */
+  position: relative;
+  max-width: 1080px; /* 4 कार्ड्स की कुल चौड़ाई (250px * 4 + 20px * 3 गैप) */
+  margin: 0 auto; /* सेंटर में लाने के लिए */
+}
+
+.slider {
+  display: flex;
+  width: calc(270px * 10); /* 10 कार्ड्स, प्रत्येक 250px + 20px गैप */
+  animation: slide 20s infinite; /* 20 सेकंड में पूरा स्लाइड (5 सेकंड प्रति स्लाइड) */
+}
+
+.slider-card {
+  width: 250px; /* इमेज के अनुसार कार्ड की चौड़ाई */
+  margin-right: 20px; /* कार्ड्स के बीच गैप */
+  flex-shrink: 0; /* कार्ड्स सिकुड़ें नहीं */
+}
+
+.card-content {
+  background: #2a3435; /* डार्क कार्ड बैकग्राउंड */
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  height: 250px; /* इमेज के अनुसार हाइट */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 150px; /* इमेज की हाइट */
+  object-fit: cover; /* इमेज को सही तरीके से फिट करें */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-text {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-text h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.card-text p {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
+
+/* स्लाइडिंग एनिमेशन */
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* शुरू में पहले 4 कार्ड्स (1-4) */
   }
-  
-  .slider-container {
-    overflow: hidden; /* स्लाइडर के बाहर के कार्ड्स छिपाने के लिए */
-    position: relative;
-    max-width: 1080px; /* 4 कार्ड्स की कुल चौड़ाई (250px * 4 + 20px * 3 गैप) */
-    margin: 0 auto; /* सेंटर में लाने के लिए */
+  20% {
+    transform: translateX(0); /* 5 सेकंड तक पहले 4 कार्ड्स */
   }
-  
-  .slider {
-    display: flex;
-    width: calc(270px * 10); /* 10 कार्ड्स, प्रत्येक 250px + 20px गैप */
-    animation: slide 20s infinite; /* 20 सेकंड में पूरा स्लाइड (5 सेकंड प्रति स्लाइड) */
+  25% {
+    transform: translateX(-1080px); /* अगले 4 कार्ड्स (5-8), 4 कार्ड्स की चौड़ाई (270px * 4) */
   }
-  
-  .slider-card {
-    width: 250px; /* इमेज के अनुसार कार्ड की चौड़ाई */
-    margin-right: 20px; /* कार्ड्स के बीच गैप */
-    flex-shrink: 0; /* कार्ड्स सिकुड़ें नहीं */
+  45% {
+    transform: translateX(-1080px);
   }
-  
-  .card-content {
-    background: #2a3435; /* डार्क कार्ड बैकग्राउंड */
-    border-radius: 8px;
-    text-align: center;
-    color: white;
-    height: 250px; /* इमेज के अनुसार हाइट */
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+  50% {
+    transform: translateX(-2160px); /* आखिरी 2 कार्ड्स (9-10), 8 कार्ड्स की चौड़ाई (270px * 8) */
   }
-  
-  .card-image {
-    width: 100%;
-    height: 150px; /* इमेज की हाइट */
-    object-fit: cover; /* इमेज को सही तरीके से फिट करें */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  70% {
+    transform: translateX(-2160px);
   }
-  
-  .card-text {
+  75% {
+    transform: translateX(-1080px); /* वापस 5-8 */
+  }
+  95% {
+    transform: translateX(-1080px);
+  }
+  100% {
+    transform: translateX(0); /* वापस शुरू में */
+  }
+}
+
+/* रेस्पॉन्सिव डिज़ाइन */
+@media (max-width: 768px) {
+  .airdrop-slider {
     padding: 1rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
-  
-  .card-text h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.4;
+
+  .slider-container {
+    max-width: 540px; /* 2 कार्ड्स की कुल चौड़ाई (250px * 2 + 20px गैप) */
   }
-  
-  .card-text p {
-    font-size: 0.9rem;
-    color: #b0b0b0;
+
+  .slider {
+    width: calc(270px * 10); /* 10 कार्ड्स, प्रत्येक 250px + 20px गैप */
   }
-  
-  /* स्लाइडिंग एनिमेशन */
+
+  .slider-card {
+    width: 250px; /* मोबाइल पर भी वही चौड़ाई */
+  }
+
+  .card-content {
+    height: 280px; /* मोबाइल पर थोड़ी कम हाइट */
+  }
+
+  .card-image {
+    height: 140px; /* मोबाइल पर इमेज की हाइट */
+  }
+
   @keyframes slide {
     0% {
-      transform: translateX(0); /* शुरू में पहले 4 कार्ड्स (1-4) */
+      transform: translateX(0); /* पहले 2 कार्ड्स */
     }
     20% {
-      transform: translateX(0); /* 5 सेकंड तक पहले 4 कार्ड्स */
+      transform: translateX(0);
     }
     25% {
-      transform: translateX(-1080px); /* अगले 4 कार्ड्स (5-8), 4 कार्ड्स की चौड़ाई (270px * 4) */
+      transform: translateX(-540px); /* अगले 2 कार्ड्स (3-4), 2 कार्ड्स की चौड़ाई (270px * 2) */
     }
     45% {
-      transform: translateX(-1080px);
+      transform: translateX(-540px);
     }
     50% {
-      transform: translateX(-2160px); /* आखिरी 2 कार्ड्स (9-10), 8 कार्ड्स की चौड़ाई (270px * 8) */
+      transform: translateX(-1080px); /* अगले 2 कार्ड्स (5-6) */
     }
     70% {
-      transform: translateX(-2160px);
+      transform: translateX(-1080px);
     }
     75% {
-      transform: translateX(-1080px); /* वापस 5-8 */
+      transform: translateX(-1620px); /* अगले 2 कार्ड्स (7-8) */
     }
     95% {
-      transform: translateX(-1080px);
+      transform: translateX(-1620px);
     }
     100% {
       transform: translateX(0); /* वापस शुरू में */
     }
   }
-  
-  /* रेस्पॉन्सिव डिज़ाइन */
-  @media (max-width: 768px) {
-    .airdrop-slider {
-      padding: 1rem;
-    }
-  
-    .slider-container {
-      max-width: 540px; /* 2 कार्ड्स की कुल चौड़ाई (250px * 2 + 20px गैप) */
-    }
-  
-    .slider {
-      width: calc(270px * 10); /* 10 कार्ड्स, प्रत्येक 250px + 20px गैप */
-    }
-  
-    .slider-card {
-      width: 250px; /* मोबाइल पर भी वही चौड़ाई */
-    }
-  
-    .card-content {
-      height: 280px; /* मोबाइल पर थोड़ी कम हाइट */
-    }
-  
-    .card-image {
-      height: 140px; /* मोबाइल पर इमेज की हाइट */
-    }
-  
-    @keyframes slide {
-      0% {
-        transform: translateX(0); /* पहले 2 कार्ड्स */
-      }
-      20% {
-        transform: translateX(0);
-      }
-      25% {
-        transform: translateX(-540px); /* अगले 2 कार्ड्स (3-4), 2 कार्ड्स की चौड़ाई (270px * 2) */
-      }
-      45% {
-        transform: translateX(-540px);
-      }
-      50% {
-        transform: translateX(-1080px); /* अगले 2 कार्ड्स (5-6) */
-      }
-      70% {
-        transform: translateX(-1080px);
-      }
-      75% {
-        transform: translateX(-1620px); /* अगले 2 कार्ड्स (7-8) */
-      }
-      95% {
-        transform: translateX(-1620px);
-      }
-      100% {
-        transform: translateX(0); /* वापस शुरू में */
-      }
-    }
-  }
+}

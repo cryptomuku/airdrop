@@ -1,17 +1,236 @@
-.featured-airdrops {
-    padding: 2rem;
-    text-align: center;
+.airdrop-resources {
+  padding: 2rem;
+  background: #1c2526; /* डार्क बैकग्राउंड */
+  color: white;
+}
+
+.et_pb_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* et_pb_gutters2 के लिए छोटा गैप */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.et_pb_column {
+  flex: 1 1 33.33%; /* 1/3 कॉलम */
+  min-width: 300px;
+}
+
+.et_pb_text {
+  margin-bottom: 1rem;
+}
+
+.et_pb_text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.container-listing {
+  position: relative;
+}
+
+.scrollable-content {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  scrollbar-width: thin; /* Firefox के लिए */
+  scrollbar-color: #3a4445 #2a3435; /* Firefox के लिए स्क्रॉल बार रंग */
+}
+
+/* Webkit ब्राउज़र्स (Chrome, Safari, Edge) के लिए स्क्रॉल बार स्टाइल */
+.scrollable-content::-webkit-scrollbar {
+  width: 8px; /* स्क्रॉल बार की चौड़ाई */
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: #2a3435; /* स्क्रॉल बार ट्रैक का रंग */
+  border-radius: 4px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: #3a4445; /* स्क्रॉल बार थंब का रंग */
+  border-radius: 4px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: #4a5455; /* होवर पर थोड़ा हल्का रंग */
+}
+
+.card {
+  display: block;
+  background: #2a3435;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.active-label {
+  position: relative;
+}
+
+.ribbon {
+  position: absolute;
+  top: 10px;
+  left: -5px;
+  background: #ff4d4d;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 3px 3px 3px 0;
+}
+
+.ribbon.verified {
+  background: #1abc9c;
+}
+
+.ribbon.ai-tech {
+  background: #9b59b6;
+}
+
+.ribbon.gaming {
+  background: #f1c40f;
+}
+
+.card-header-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.column1 {
+  flex: 0 0 60px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.column2 {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-socials {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #3a4445;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.social-item span {
+  color: white;
+}
+
+.column3 {
+  flex: 0 0 40px;
+}
+
+.blockchain-logo img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.card-airdrop-footer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.value {
+  flex: 1;
+}
+
+.amount {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.approx {
+  font-size: 0.8rem;
+  color: #b0b0b0;
+}
+
+.fixed-button {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.btn-show-more {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #00b4d8;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.btn-show-more:hover {
+  background: #0096c7;
+}
+
+.et_pb_button_module_wrapper {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.et_pb_button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #2a3435;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.et_pb_button i {
+  margin-right: 0.5rem;
+}
+
+.et_pb_button:hover {
+  background: #3a4445;
+}
+
+/* रेस्पॉन्सिव डिज़ाइन */
+@media (max-width: 768px) {
+  .et_pb_row {
+    flex-direction: column;
   }
-  
-  .airdrop-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
+
+  .et_pb_column {
+    min-width: 100%;
   }
-  
-  @media (max-width: 768px) {
-    .featured-airdrops {
-      padding: 1rem;
-    }
+
+  .scrollable-content {
+    max-height: 400px;
   }
+}

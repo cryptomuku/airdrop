@@ -2,10 +2,22 @@
     margin: 0%;
     background: #1c2526;
 }
-
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .website{
     max-width: 1280px;
     /* display: flex;
     flex-direction: column;
     align-items: center; */
+}
+
+@media (max-width: 768px) {
+
+    body{
+        justify-content: center;
+        align-items: center;
+    }
 }

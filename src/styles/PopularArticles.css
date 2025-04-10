@@ -1,0 +1,93 @@
+.popular-articles {
+  padding: 2rem;
+  background: #1c2526; /* डार्क बैकग्राउंड */
+  color: white;
+}
+
+.popular-articles .et_pb_row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem; /* डिफ़ॉल्ट गैप */
+}
+
+.popular-articles .et_pb_row_13 {
+  margin-bottom: 1rem;
+}
+
+.popular-articles .et_pb_row_14,
+.popular-articles .et_pb_row_15 {
+  gap: 0rem;
+}
+
+.popular-articles .et_pb_column {
+  flex: 1;
+  min-width: 0;
+}
+
+.popular-articles .et_pb_row_13 .et_pb_column {
+  flex: 1 1 100%; /* 4/4 कॉलम */
+}
+
+.popular-articles .et_pb_row_14 .et_pb_column,
+.popular-articles .et_pb_row_15 .et_pb_column {
+  flex: 1 1 33.33%; /* 1/3 कॉलम */
+}
+
+.popular-articles .et_pb_text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.popular-articles .et_pb_blurb {
+  margin-bottom: 1rem;
+}
+
+.popular-articles .et_pb_blurb_content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.popular-articles .et_pb_main_blurb_image img {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.popular-articles .et_pb_blurb_container h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #e6ebf6;
+}
+
+.popular-articles .et_pb_blurb_container h4 span {
+  transition: color 0.3s ease;
+}
+
+.popular-articles .et_pb_blurb:hover h4 span {
+  color: #2cd4d9; /* होवर पर टेक्स्ट का रंग बदलें */
+}
+
+/* रेस्पॉन्सिव डिज़ाइन */
+@media (max-width: 768px) {
+  .popular-articles .et_pb_row {
+    flex-direction: column;
+  }
+
+  .popular-articles .et_pb_column {
+    min-width: 100%;
+  }
+
+  .popular-articles .et_pb_row_14 .et_pb_column,
+  .popular-articles .et_pb_row_15 .et_pb_column {
+    flex: 1 1 100%;
+  }
+
+  .popular-articles .et_pb_blurb_content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}

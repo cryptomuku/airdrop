@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom';
-import AirdropCard from '../components/AirdropCard';
-import Newsletter from '../components/Newsletter';
+// import AirdropCard from '../components/AirdropCard';
+// import Newsletter from '../components/Newsletter';
 import '../styles/Home.css';
 import '../styles/AirdropSlider.css';
 import AirdropSections from '../components/AirdropSections';
 import AirdropResources from '../components/AirdropResources';
+import AirdropSlider from '../components/AirdropSlider.jsx';
+// import TradeCrypto from '../components/TradeCrypto';
+// import NewsletterForm1 from '../components/NewsletterForm1.jsx';
+import PopularArticles from '../components/PopularArticles.jsx';
+
 
 
 function Home() {
@@ -76,7 +81,6 @@ function Home() {
       </div>
       {/* नया स्लाइडर सेक्शन */}
       <section className="airdrop-slider">
-        <h2>Explore More Airdrops</h2>
         <div className="slider-container">
           <div className="slider">
             {airdropData.map((airdrop, index) => (
@@ -100,14 +104,15 @@ function Home() {
       
       {/* मौजूदा Featured Airdrops सेक्शन */}
       <section className="featured-section">
-        <h2>Featured Airdrops</h2>
-        <div className="airdrop-grid">
-          <AirdropCard title="HyperLiquid" description="Trade and earn rewards" />
-          <AirdropCard title="PhotonSol" description="Solana-based airdrop" />
-        </div>
+      <AirdropSlider />
       </section>
 
-      <Newsletter />
+      <PopularArticles />
+
+      {/* <TradeCrypto /> */}
+
+      {/* <Newsletter /> */}
+      {/* <NewsletterForm1 /> */}
     </div>
   );
 }
