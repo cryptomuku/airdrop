@@ -1,0 +1,175 @@
+/* Boost Campaign Section */
+.boost-campaign {
+    background: #000; 
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .boost-campaign h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .boost-description {
+    font-size: 16px;
+    color: #b0b0b0;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.5;
+  }
+  
+  /* Boost Options Grid */
+  .boost-options {
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); 3 columns */
+    gap: 30px;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Boost Card */
+  .boost-card {
+    min-width: 250px;
+    height: auto;
+    position: relative;
+    background: #2a2a3e;
+    border: 1px solid #444; 
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .boost-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Label (e.g., "Most purchased", "Great value") */
+  .boost-label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: #00d4ff; /* Cyan background for labels */
+    color: #1a1a2e;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .boost-card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .boost-description-text {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    white-space: pre-line; /* Handles newlines in description (e.g., Telegram bot) */
+  }
+  
+  .boost-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00d4ff; /* Cyan price text */
+  }
+  
+  /* Buttons Section */
+  .boost-buttons {
+    margin-top: 40px;
+  }
+  
+  .boost-buttons p {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin: 20px 0;
+  }
+  
+  .boost-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a2e;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .boost-button:hover {
+    background: transparent;
+    color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .boost-options {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+  
+    .boost-card {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .boost-campaign h2 {
+      font-size: 28px;
+    }
+  
+    .boost-description,
+    .boost-buttons p {
+      font-size: 14px;
+    }
+  
+    .boost-options {
+      grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+  
+    .boost-card h4 {
+      font-size: 18px;
+    }
+  
+    .boost-description-text {
+      font-size: 12px;
+    }
+  
+    .boost-price {
+      font-size: 18px;
+    }
+  
+    .boost-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .boost-campaign h2 {
+      font-size: 24px;
+    }
+  
+    .boost-label {
+      font-size: 10px;
+      padding: 4px 8px;
+      left: 15px;
+    }
+  
+    .boost-card {
+      padding: 15px;
+    }
+  }

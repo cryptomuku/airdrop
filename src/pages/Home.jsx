@@ -6,9 +6,10 @@ import '../styles/AirdropSlider.css';
 import AirdropSections from '../components/AirdropSections';
 import AirdropResources from '../components/AirdropResources';
 import AirdropSlider from '../components/AirdropSlider.jsx';
-// import TradeCrypto from '../components/TradeCrypto';
-// import NewsletterForm1 from '../components/NewsletterForm1.jsx';
+import TradeCrypto from '../components/TradeCrypto';
+import NewsletterForm1 from '../components/NewsletterForm1.jsx';
 import PopularArticles from '../components/PopularArticles.jsx';
+
 
 
 
@@ -109,11 +110,12 @@ function Home() {
 
       <PopularArticles />
 
-      {/* <TradeCrypto /> */}
+      <TradeCrypto />
 
       {/* <Newsletter /> */}
-      {/* <NewsletterForm1 /> */}
+      <NewsletterForm1 />
     </div>
+    
   );
 }
 

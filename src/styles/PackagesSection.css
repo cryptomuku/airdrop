@@ -1,0 +1,192 @@
+/* Packages Section */
+.packages-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .packages-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+  
+  /* Packages List */
+  .packages-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Package Card */
+  .package-card {
+    background: #2a2a3e;
+    border-radius: 15px;
+    padding: 30px 20px;
+    flex: 1;
+    max-width: 20.33%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .package-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #00d4ff, #ff00ff) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    transition: opacity 0.3s;
+  }
+  
+  .package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .package-card:hover::before {
+    opacity: 1;
+  }
+  
+  /* Package Header */
+  .package-header {
+    margin-bottom: 20px;
+  }
+  
+  .package-header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .package-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00d4ff;
+    background: rgba(0, 212, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+  }
+  
+  /* Package Description */
+  .package-description {
+    margin-bottom: 20px;
+  }
+  
+  .package-description ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .package-description li {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .package-description li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #00d4ff;
+  }
+  
+  /* Package Footer */
+  .package-footer {
+    text-align: center;
+  }
+  
+  .purchase-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a2e;
+    background: #00d4ff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .purchase-btn:hover {
+    background: #00b8d4;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .packages-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .package-card {
+      max-width: 100%;
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .packages-section h2 {
+      font-size: 28px;
+    }
+  
+    .package-header h3 {
+      font-size: 20px;
+    }
+  
+    .package-price {
+      font-size: 18px;
+    }
+  
+    .package-description li {
+      font-size: 12px;
+    }
+  
+    .purchase-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .packages-section h2 {
+      font-size: 24px;
+    }
+  
+    .package-card {
+      padding: 20px 15px;
+    }
+  
+    .package-header h3 {
+      font-size: 18px;
+    }
+  
+    .package-price {
+      font-size: 16px;
+    }
+  
+    .purchase-btn {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }

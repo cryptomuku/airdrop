@@ -1,6 +1,5 @@
 .airdrop-sections {
     padding: 2rem;
-    background: #1c2526;
     color: white;
 }
 
@@ -10,7 +9,6 @@
     gap: 1rem;
     max-width: 1100px;
     margin: 0 auto;
-
 }
 
 .et_pb_column {
@@ -37,7 +35,7 @@
     padding-right: 0.5rem;
     scrollbar-width: thin;
     /* Firefox के लिए */
-    scrollbar-color: #3a4445 #2a3435;
+    scrollbar-color: #4561B7 #6C5045;
 }
 
 .scrollable-content::-webkit-scrollbar {
@@ -46,25 +44,21 @@
 }
 
 .scrollable-content::-webkit-scrollbar-track {
-    background: #2a3435;
-    /* स्क्रॉल बार ट्रैक का रंग */
+    background: #6C5045; /* भूरा स्क्रॉल ट्रैक के लिए */
     border-radius: 4px;
 }
 
 .scrollable-content::-webkit-scrollbar-thumb {
-    background: #3a4445;
-    /* स्क्रॉल बार थंब का रंग */
+    background: #4561B7; /* नीला स्क्रॉल थंब के लिए */
     border-radius: 4px;
 }
 
 .scrollable-content::-webkit-scrollbar-thumb:hover {
-    background: #4a5455;
-    /* होवर पर थोड़ा हल्का रंग */
+    background: #0B46A4; /* होवर पर गहरा नीला */
 }
 
 .card {
-    display: block;
-    background: #2a3435;
+    display: block; 
     border-radius: 8px;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -75,6 +69,7 @@
 }
 
 .card:hover {
+    /* box-shadow: rgba(44, 212, 217, 0.2) 0px 2px 18px 0px; */
     transform: translateY(-5px);
 }
 
@@ -82,7 +77,7 @@
     position: absolute;
     top: 10px;
     left: -5px;
-    background: #ff4d4d;
+    background: #7CBC1F; /* हरा रिबन के लिए */
     color: white;
     padding: 0.2rem 0.5rem;
     font-size: 0.8rem;
@@ -90,35 +85,35 @@
 }
 
 .ribbon.new {
-    background: #ff4d4d;
+    background: #7CBC1F; /* हरा */
 }
 
 .ribbon.featured {
-    background: #00b4d8;
+    background: #0B46A4; /* गहरा नीला */
 }
 
 .ribbon.gaming {
-    background: #f1c40f;
+    background: #4561B7; /* नीला */
 }
 
 .ribbon.meme-coin {
-    background: #e67e22;
+    background: #6C5045; /* भूरा */
 }
 
 .ribbon.audited {
-    background: #2ecc71;
+    background: #7CBC1F; /* हरा */
 }
 
 .ribbon.ai-tech {
-    background: #9b59b6;
+    background: #4561B7; /* नीला */
 }
 
 .ribbon.testnet {
-    background: #3498db;
+    background: #0B46A4; /* गहरा नीला */
 }
 
 .ribbon.verified {
-    background: #1abc9c;
+    background: #7CBC1F; /* हरा */
 }
 
 .card-header-container {
@@ -159,7 +154,7 @@
     justify-content: center;
     width: 24px;
     height: 24px;
-    background: #3a4445;
+    background: #4561B7; /* नीला सोशल आइकन्स के लिए */
     border-radius: 50%;
     font-size: 0.8rem;
 }
@@ -206,7 +201,7 @@
 .btn-show-more {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: #00b4d8;
+    background: #0B46A4; /* गहरा नीला बटन के लिए */
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -214,7 +209,7 @@
 }
 
 .btn-show-more:hover {
-    background: #0096c7;
+    background: #4561B7; /* होवर पर नीला */
 }
 
 /* रेस्पॉन्सिव डिज़ाइन */

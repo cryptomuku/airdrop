@@ -11,6 +11,7 @@ import LatestNews from './pages/LatestNews';
 import Cointracker from './pages/Cointracker';
 import SolanaAirdrops from './pages/SolanaAirdrops';
 import PortalToBitcoin from './pages/PortalToBitcoin';
+import ListAirdrop from './components/AdvertisingPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/cointracker" element={<Cointracker />} />
           <Route path="/solana-airdrops" element={<SolanaAirdrops />} />
           <Route path="/portal-to-bitcoin" element={<PortalToBitcoin />} />
+          <Route path="/AdvertisingPage" element={<ListAirdrop />} />
         </Routes>
         <Footer />
       </div>

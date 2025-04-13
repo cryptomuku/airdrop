@@ -1,0 +1,487 @@
+/* General styles */
+.advertising-page {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    /* background: #000; */
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    /* background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); */
+    padding: 170px 20px 40px;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .gradient-heading {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00d4ff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    /* background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); */
+    padding: 40px 20px;
+  }
+  
+  .stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .stat-item {
+    flex: 1;
+    max-width: 33.33%;
+    text-align: center;
+  }
+  
+  .stat-value {
+    font-size: 100px;
+    font-weight: bold;
+    color: #00d4ff;
+    margin-bottom: 10px;
+  }
+  
+  .stat-label {
+    font-size: 16px;
+    color: #b0b0b0;
+  }
+  
+  /* Packages Section */
+  .packages-section {
+    /* background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .packages-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .packages-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .package-card {
+    background: #2a2a3e;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    max-width: 33.33%;
+    transition: transform 0.3s;
+  }
+  
+  .package-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .package-header h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .package-header span {
+    font-size: 20px;
+    color: #00d4ff;
+  }
+  
+  .package-description ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    color: #b0b0b0;
+  }
+  
+  .package-description li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .package-footer .purchase-btn {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a2e;
+    background: #00d4ff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .package-footer .purchase-btn:hover {
+    background: #00b8d4;
+  }
+  
+  /* Trusted By Section */
+  .trusted-section {
+    /* background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .trusted-section p {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+  }
+  
+  .trusted-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .trusted-logo {
+    flex: 1;
+    max-width: 20%;
+  }
+  
+  .trusted-logo img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #444;
+    border-radius: 5px;
+  }
+  
+  /* Boost Campaign Section */
+  .boost-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .boost-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .boost-description {
+    font-size: 16px;
+    color: #b0b0b0;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  .boost-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .boost-card {
+    flex: 1;
+    max-width: 33.33%;
+    /* background: #2a2a3e; */
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .boost-label {
+    font-size: 12px;
+    color: #00d4ff;
+    margin-bottom: 10px;
+  }
+  
+  .boost-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .boost-card .boost-description {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+    white-space: pre-line;
+  }
+  
+  .boost-price {
+    font-size: 20px;
+    color: #00d4ff;
+  }
+  
+  .boost-buttons {
+    margin-top: 40px;
+  }
+  
+  .boost-buttons p {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin: 20px 0;
+  }
+  
+  .boost-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a2e;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .boost-button:hover {
+    background: transparent;
+    color: #ffffff;
+  }
+  
+  /* Audience Section */
+  .audience-section {
+    /* background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); */
+    padding: 40px 20px;
+  }
+  
+  .audience-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .countries-column {
+    flex: 1;
+    max-width: 25%;
+  }
+  
+  .countries-column h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .country-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .country-icon {
+    color: #00d4ff;
+    font-size: 12px;
+  }
+  
+  .country-item p {
+    font-size: 14px;
+  }
+  
+  .demographics-column {
+    flex: 1;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .demographic-item {
+    text-align: center;
+  }
+  
+  .circle-counter {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+  }
+  
+  .circle-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #444;
+  }
+  
+  .circle-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #2cd4d9;
+    clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    transform-origin: center;
+  }
+  
+  .percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #00d4ff;
+  }
+  
+  .percent-sign {
+    font-size: 16px;
+  }
+  
+  .demographic-item h3 {
+    font-size: 18px;
+  }
+  
+  /* Disclaimer Section */
+  .disclaimer-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .disclaimer-text {
+    font-size: 14px;
+    color: #b0b0b0;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .gradient-heading {
+      font-size: 28px;
+    }
+  
+    .stats-row,
+    .packages-list,
+    .trusted-logos,
+    .boost-options,
+    .audience-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stat-item,
+    .package-card,
+    .trusted-logo,
+    .boost-card,
+    .countries-column,
+    .demographics-column {
+      max-width: 100%;
+    }
+  
+    .stat-value {
+      font-size: 60px;
+    }
+  
+    .trusted-logo {
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gradient-heading {
+      font-size: 24px;
+    }
+  
+    .hero-section {
+      padding-top: 100px;
+    }
+  
+    .stat-label,
+    .package-description li,
+    .boost-card .boost-description,
+    .country-item p,
+    .disclaimer-text {
+      font-size: 12px;
+    }
+  
+    .package-header h3,
+    .boost-card h4 {
+      font-size: 20px;
+    }
+  
+    .package-header span,
+    .boost-price {
+      font-size: 18px;
+    }
+  
+    .purchase-btn,
+    .boost-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .trusted-logo {
+      max-width: 70%;
+    }
+  
+    .countries-column h3,
+    .demographic-item h3 {
+      font-size: 16px;
+    }
+  
+    .circle-counter {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .percent {
+      font-size: 20px;
+    }
+  
+    .percent-sign {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gradient-heading {
+      font-size: 20px;
+    }
+  
+    .packages-section h2,
+    .boost-section h2 {
+      font-size: 24px;
+    }
+  
+    .boost-description,
+    .boost-buttons p {
+      font-size: 14px;
+    }
+  
+    .trusted-logo {
+      max-width: 100%;
+    }
+  
+    .circle-counter {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .percent {
+      font-size: 16px;
+    }
+  
+    .percent-sign {
+      font-size: 10px;
+    }
+  }

@@ -1,9 +1,216 @@
+/* Footer container */
 .footer {
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  /* background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); */
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Row layout (1-2_1-6_1-6_1-6) */
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Columns */
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+}
+
+/* Column 1: Logo, Description, Social Icons (50%) */
+.footer-column-1 {
+  flex: 2;
+  max-width: 50%;
+}
+
+.footer-logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.footer-description {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #444;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.social-links li a:hover {
+  background: #00d4ff;
+  border-color: #00d4ff;
+}
+
+/* Column 2 & 3: Company and Useful Links (16.67% each) */
+.footer-column-2,
+.footer-column-3 {
+  flex: 1;
+  max-width: 16.67%;
+}
+
+.footer-heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-link {
+  font-size: 14px;
+  color: #b0b0b0;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #00d4ff;
+}
+
+/* Column 4: Action Buttons (16.67%) */
+.footer-column-4 {
+  flex: 1;
+  max-width: 16.67%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-button {
+  display: block;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a1a2e;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.footer-button:hover {
+  background: transparent;
+  color: #ffffff;
+}
+
+/* Disclaimer and Copyright Section */
+.footer-disclaimer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.divider {
+  border-top: 1px solid #444;
+  margin-bottom: 20px;
+}
+
+.disclaimer-text,
+.copyright {
+  font-size: 12px;
+  color: #b0b0b0;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.copyright {
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-column-1 {
+    max-width: 100%;
   }
+
+  .footer-column-2,
+  .footer-column-3,
+  .footer-column-4 {
+    max-width: 33.33%;
+  }
+
+  .footer-logo img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column-1,
+  .footer-column-2,
+  .footer-column-3,
+  .footer-column-4 {
+    max-width: 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-column-4 {
+    align-items: center;
+  }
+
+  .footer-button {
+    width: 200px;
+  }
+
+  .disclaimer-text,
+  .copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-description {
+    font-size: 12px;
+  }
+
+  .footer-heading {
+    font-size: 14px;
+  }
+
+  .footer-link,
+  .footer-button {
+    font-size: 12px;
+  }
+
+  .social-links li a {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}

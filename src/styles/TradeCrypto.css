@@ -1,0 +1,134 @@
+.exchange-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    /* background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); */
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .exchange-content {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .exchange-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .exchange-content p {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .learn-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a2e;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .learn-button:hover {
+    background: transparent;
+    color: #ffffff;
+  }
+  
+  .exchange-logos {
+    flex: 1;
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .exchange-logo {
+    display: block;
+    border: 1px solid #444;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .exchange-logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .exchange-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @media (max-width: 1024px) {
+    .exchange-content,
+    .exchange-logos {
+      max-width: 100%;
+    }
+  
+    .exchange-content {
+      text-align: center;
+    }
+  
+    .exchange-logos {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .exchange-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .exchange-content h2 {
+      font-size: 28px;
+    }
+  
+    .exchange-content p {
+      font-size: 14px;
+    }
+  
+    .learn-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .exchange-logos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .exchange-content h2 {
+      font-size: 24px;
+    }
+  
+    .exchange-content p {
+      font-size: 12px;
+    }
+  
+    .learn-button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  
+    .exchange-logos {
+      grid-template-columns: 1fr;
+      max-width: 200px;
+    }
+  }

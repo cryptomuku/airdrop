@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 
+
 function AirdropSlider() {
   const airdropData = [
     {
@@ -40,10 +41,10 @@ function AirdropSlider() {
       to: "/news/depin-airdrops",
     },
     {
-      title: "A Guide on Shorting Crypto - Earn in the Dump!",
-      subtitle: "GUIDE",
-      image: "https://i0.wp.com/airdropalert.com/wp-content/uploads/2024/03/jpeg-optimizer_How-to-Short-Bitcoin.jpg?w=1080&quality=50&ssl=1",
-      to: "/news/shorting-crypto-guide",
+      title: "List of 7 Free DePin Airdrops to Passively Farm",
+      subtitle: "AIRDROPS",
+      image: "https://i0.wp.com/airdropalert.com/wp-content/uploads/2024/03/jpeg-optimizer_Free-Depin-Airdrops.jpg?w=1080&quality=50&ssl=1",
+      to: "/news/depin-airdrops",
     },
   ];
 
