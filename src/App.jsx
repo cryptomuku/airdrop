@@ -8,7 +8,7 @@ import DeFiAirdrops from './pages/DeFiAirdrops';
 import NFTAirdrops from './pages/NFTAirdrops';
 import EarnCrypto from './pages/EarnCrypto';
 import LatestNews from './pages/LatestNews';
-import Cointracker from './pages/Cointracker';
+// import Cointracker from './pages/Cointracker';
 import SolanaAirdrops from './pages/SolanaAirdrops';
 import PortalToBitcoin from './pages/PortalToBitcoin';
 import ListAirdrop from './components/AdvertisingPage';
@@ -26,7 +26,7 @@ function App() {
           <Route path="/nft-airdrops" element={<NFTAirdrops />} />
           <Route path="/earn-crypto" element={<EarnCrypto />} />
           <Route path="/latest-news" element={<LatestNews />} />
-          <Route path="/cointracker" element={<Cointracker />} />
+          {/* <Route path="/cointracker" element={<Cointracker />} /> */}
           <Route path="/solana-airdrops" element={<SolanaAirdrops />} />
           <Route path="/portal-to-bitcoin" element={<PortalToBitcoin />} />
           <Route path="/AdvertisingPage" element={<ListAirdrop />} />
