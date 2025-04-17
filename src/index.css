@@ -2,8 +2,11 @@
     margin: 0%;
     background: #1c2526;
     font-family: 'Arial', sans-serif;
+
+body{
+    display: flex;
+    justify-content: center;
 }
-body{}
 .website{
     max-width: 1280px;
     /* display: flex;
