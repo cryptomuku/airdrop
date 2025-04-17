@@ -36,7 +36,7 @@
     overflow-y: auto;
     padding-right: 0.5rem;
     scrollbar-width: thin; /* Firefox के लिए */
-    scrollbar-color: #3a4445 #2a3435; /* Firefox के लिए स्क्रॉल बार रंग */
+    scrollbar-color: #8ed1fc #0000; /* Firefox के लिए स्क्रॉल बार रंग */
   }
   
   /* Webkit ब्राउज़र्स (Chrome, Safari, Edge) के लिए स्क्रॉल बार स्टाइल */
@@ -183,10 +183,10 @@
   }
   
   .btn-show-more {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #00b4d8;
-    color: white;
+    display: block;
+    padding: 1rem 4rem;
+    color: var(--white);
+    background-color: rgb(44 212 217 / .25);
     text-decoration: none;
     border-radius: 4px;
     transition: background 0.3s ease;

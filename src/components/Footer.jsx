@@ -40,9 +40,7 @@ function Footer() {
       <div className="footer-row">
         {/* Column 1: Logo, Description, Social Icons */}
         <div className="footer-column footer-column-1">
-          <a href="/" className="footer-logo">
-            <img src={airdropLogo} alt="Airdrop Alert Logo" />
-          </a>
+        <div className="logo">Airdrop Alert</div>
           <p className="footer-description">
             AirdropAlert.com is the crypto industry’s #1 rated library to find trusted airdrop campaigns, giveaways and more. Helping millions of people discover new projects & find new ways to earn cryptocurrency since 2017.
           </p>
