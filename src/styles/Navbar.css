@@ -6,6 +6,7 @@
   background-color: #1c2526; /* इमेज के अनुसार डार्क बैकग्राउंड */
   color: white;
   position: relative;
+  z-index: 10000;
 }
 
 .logo {
