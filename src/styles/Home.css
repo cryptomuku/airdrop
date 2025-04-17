@@ -6,7 +6,7 @@
 /* हीरो सेक्शन */
 .hero-section {
   /* background: linear-gradient(90deg, #1c2526 0%, #2a3435 100%); */
-  min-height: 50vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
