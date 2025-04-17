@@ -1,0 +1,467 @@
+.airdrop-search-unique {
+    padding: 2rem;
+    background: #1c2526;
+    color: white;
+    text-align: center;
+  }
+  
+  .airdrop-search-input-unique {
+    margin-bottom: 1.5rem;
+  }
+  
+  .airdrop-input-group-unique.search-unique h4.airdrop-title-unique {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #e6ebf6;
+  }
+  
+  .airdrop-search-box-unique {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .airdrop-search-box-unique #airdrop-search-box {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #2a3435;
+    border-radius: 25px;
+    background: #2a3435;
+    color: #e6ebf6;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .airdrop-search-box-unique #airdrop-search-box:focus {
+    border-color: #2cd4d9;
+  }
+  
+  .airdrop-message-unique {
+    margin-top: 0.5rem;
+    color: #808c97;
+    font-size: 0.9rem;
+  }
+  
+  .airdrop-advanced-filters-unique {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .airdrop-btn-unique.airdrop-project-info-unique {
+    padding: 0.75rem 1.5rem;
+    background: #2cd4d9;
+    color: #1c1e27;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .airdrop-btn-unique.airdrop-project-info-unique:hover {
+    background: #26c6cc;
+  }
+  
+  .airdrop-filters-unique {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .airdrop-select-unique {
+    position: relative;
+    min-width: 120px;
+  }
+  
+  .airdrop-select-unique select {
+    display: none;
+  }
+  
+  .airdrop-select-styled-unique {
+    padding: 0.75rem 1rem;
+    background: #2a3435;
+    border: 2px solid #2a3435;
+    border-radius: 25px;
+    color: #e6ebf6;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .airdrop-select-styled-unique:hover {
+    border-color: #3a4445;
+  }
+  
+  .airdrop-select-styled-unique span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .airdrop-select-unique:focus .airdrop-select-options-unique,
+  .airdrop-select-unique:hover .airdrop-select-options-unique {
+    display: block;
+  }
+  
+  .airdrop-select-options-unique {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #2a3435;
+    border: 2px solid #2a3435;
+    border-radius: 0 0 25px 25px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+  }
+  
+  .airdrop-select-options-unique li {
+    padding: 0.5rem 1rem;
+    color: #e6ebf6;
+    cursor: pointer;
+  }
+  
+  .airdrop-select-options-unique li:hover,
+  .airdrop-select-options-unique .is-selected {
+    background: #3a4445;
+  }
+  
+  .airdrop-multiselect-dropdown-unique {
+    position: relative;
+    min-width: 120px;
+  }
+  
+  .airdrop-dropbtn-unique {
+    padding: 0.75rem 1rem;
+    background: #2a3435;
+    border: 2px solid #2a3435;
+    border-radius: 25px;
+    color: #e6ebf6;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    transition: border-color 0.3s ease;
+  }
+  
+  .airdrop-dropbtn-unique:hover {
+    border-color: #3a4445;
+  }
+  
+  .airdrop-selected-options-unique {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-right: 0.5rem;
+  }
+  
+  .airdrop-selected-option-unique {
+    background: #3a4445;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+  }
+  
+  .airdrop-button-text-unique {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .airdrop-arrow-unique {
+    font-size: 0.9rem;
+  }
+  
+  .airdrop-dropdown-content-unique {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #2a3435;
+    border: 2px solid #2a3435;
+    border-radius: 0 0 25px 25px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+  }
+  
+  .airdrop-multiselect-dropdown-unique:hover .airdrop-dropdown-content-unique {
+    display: block;
+  }
+  
+  .airdrop-dropdown-item-unique {
+    padding: 0.5rem 1rem;
+    color: #e6ebf6;
+    cursor: pointer;
+  }
+  
+  .airdrop-dropdown-item-unique:hover {
+    background: #3a4445;
+  }
+  
+  .airdrop-search-container-unique {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .airdrop-row-unique.airdrop-card-unique {
+    display: flex;
+    flex-direction: column;
+    background: #2a3435;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .airdrop-row-unique.airdrop-card-unique:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .airdrop-active-label-unique {
+    position: relative;
+  }
+  
+  .airdrop-ribbon-unique {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #2cd4d9;
+    color: #1c1e27;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 0 8px 0 8px;
+  }
+  
+  .airdrop-ribbon-unique.new {
+    background: #ff4d4d;
+  }
+  
+  .airdrop-ribbon-unique.featured {
+    background: #1abc9c;
+  }
+  
+  .airdrop-ribbon-unique.testnet {
+    background: #f1c40f;
+  }
+  
+  .airdrop-card-header-container-unique {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .airdrop-column-unique {
+    flex: 1;
+  }
+  
+  .airdrop-column1-unique {
+    flex: 0 0 60px;
+  }
+  
+  .airdrop-logo-unique img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+  }
+  
+  .airdrop-column2-unique {
+    flex: 1;
+  }
+  
+  .airdrop-title-unique {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem;
+    color: #e6ebf6;
+  }
+  
+  .airdrop-card-socials-unique {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .airdrop-social-item-unique {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #3a4445;
+    border-radius: 4px;
+    color: #e6ebf6;
+    font-size: 0.9rem;
+  }
+  
+  .airdrop-social-item-unique .telegram-icon,
+  .airdrop-social-item-unique .twitter-icon,
+  .airdrop-social-item-unique .discord-icon,
+  .airdrop-social-item-unique .email-icon,
+  .airdrop-social-item-unique .reddit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .airdrop-social-item-unique .icon-text,
+  .airdrop-social-item-unique .remaining {
+    font-size: 0.9rem;
+  }
+  
+  .airdrop-column3-unique {
+    flex: 0 0 40px;
+  }
+  
+  .airdrop-blockchain-logo-unique {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .airdrop-blockchain-logo-unique img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .airdrop-blockchain-logo-unique span {
+    font-size: 0.9rem;
+    color: #e6ebf6;
+  }
+  
+  .airdrop-card-footer-unique {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .airdrop-value-unique {
+    flex: 1;
+  }
+  
+  .airdrop-amount-unique {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e6ebf6;
+  }
+  
+  .airdrop-approx-unique {
+    font-size: 0.9rem;
+    color: #808c97;
+  }
+  
+  .airdrop-pagination-unique {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .airdrop-page-numbers-unique {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+  }
+  
+  .airdrop-page-numbers-unique li {
+    display: inline;
+  }
+  
+  .airdrop-page-numbers-unique button,
+  .airdrop-page-numbers-unique .airdrop-current-unique,
+  .airdrop-page-numbers-unique .airdrop-dots-unique {
+    padding: 0.5rem 1rem;
+    background: #2a3435;
+    color: #e6ebf6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .airdrop-page-numbers-unique .airdrop-current-unique {
+    background: #2cd4d9;
+    color: #1c1e27;
+  }
+  
+  .airdrop-page-numbers-unique button:hover {
+    background: #3a4445;
+  }
+  
+  .airdrop-page-numbers-unique .airdrop-dots-unique {
+    background: transparent;
+    cursor: default;
+  }
+  
+  /* रेस्पॉन्सिव डिज़ाइन */
+  @media (max-width: 768px) {
+    .airdrop-search-unique {
+      padding: 1rem;
+    }
+  
+    .airdrop-input-group-unique.search-unique h4.airdrop-title-unique {
+      font-size: 1.2rem;
+    }
+  
+    .airdrop-search-box-unique {
+      max-width: 100%;
+    }
+  
+    .airdrop-advanced-filters-unique {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .airdrop-filters-unique {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  
+    .airdrop-select-unique,
+    .airdrop-multiselect-dropdown-unique {
+      width: 100%;
+    }
+  
+    .airdrop-dropbtn-unique {
+      width: 100%;
+    }
+  
+    .airdrop-btn-unique.airdrop-project-info-unique {
+      width: 100%;
+    }
+  
+    .airdrop-card-header-container-unique {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .airdrop-column1-unique,
+    .airdrop-column3-unique {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  
+    .airdrop-column2-unique {
+      width: 100%;
+    }
+  
+    .airdrop-card-footer-unique {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }

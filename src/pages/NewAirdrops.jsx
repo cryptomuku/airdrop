@@ -1,14 +1,14 @@
-import AirdropCard from '../components/AirdropCard';
+
+import AirdropSearch from '../components/AirdropSearch';
+import ErrorBoundary from '../components/ErrorBoundary';
 import '../styles/NewAirdrops.css';
 
 function NewAirdrops() {
   return (
     <div className="new-airdrops">
-      <h1>New Airdrops</h1>
-      <div className="airdrop-grid">
-        <AirdropCard title="New Airdrop 1" description="Details here" />
-        <AirdropCard title="New Airdrop 2" description="More details" />
-      </div>
+      <ErrorBoundary componentName="AirdropSearch">
+        <AirdropSearch />
+      </ErrorBoundary>
     </div>
   );
 }

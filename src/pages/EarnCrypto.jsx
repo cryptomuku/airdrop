@@ -1,14 +1,13 @@
-import AirdropCard from '../components/AirdropCard';
+import AirdropSearch from '../components/AirdropSearch';
+import ErrorBoundary from '../components/ErrorBoundary';
 import '../styles/EarnCrypto.css';
 
 function EarnCrypto() {
   return (
     <div className="earn-crypto">
-      <h1>Earn Crypto</h1>
-      <div className="airdrop-grid">
-        <AirdropCard title="Earn Crypto 1" description="Earn rewards by staking" />
-        <AirdropCard title="Earn Crypto 2" description="Participate in tasks" />
-      </div>
+       <ErrorBoundary componentName="AirdropSearch">
+        <AirdropSearch />
+      </ErrorBoundary>
     </div>
   );
 }

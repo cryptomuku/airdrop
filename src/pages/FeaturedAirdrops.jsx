@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'; // Link इम्पोर्ट करें
+import AirdropSlider from '../components/AirdropSlider.jsx';
 import '../styles/AirdropResources.css';
 
 function AirdropResources() {
@@ -343,7 +344,9 @@ function AirdropResources() {
   );
 
   return (
+    
     <div className="airdrop-resources">
+            <AirdropSlider />
       <div className="et_pb_row">
         <div className="et_pb_column">
           <div className="et_pb_text">

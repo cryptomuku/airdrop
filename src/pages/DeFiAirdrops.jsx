@@ -1,14 +1,14 @@
-import AirdropCard from '../components/AirdropCard';
+
+import AirdropSearch from '../components/AirdropSearch';
+import ErrorBoundary from '../components/ErrorBoundary';
 import '../styles/DeFiAirdrops.css';
 
 function DeFiAirdrops() {
   return (
     <div className="defi-airdrops">
-      <h1>DeFi Airdrops</h1>
-      <div className="airdrop-grid">
-        <AirdropCard title="DeFi Airdrop 1" description="Details here" />
-        <AirdropCard title="DeFi Airdrop 2" description="More details" />
-      </div>
+       <ErrorBoundary componentName="AirdropSearch">
+        <AirdropSearch />
+      </ErrorBoundary>
     </div>
   );
 }
