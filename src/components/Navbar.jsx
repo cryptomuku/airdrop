@@ -28,7 +28,7 @@ function Navbar() {
           </ul>
         </li>
         <li><Link to="/latest-news" onClick={toggleMenu}>Blog</Link></li>
-        <li><Link to="/cointracker" onClick={toggleMenu}>Cointracker</Link></li>
+        {/* <li><Link to="/cointracker" onClick={toggleMenu}>Cointracker</Link></li> */}
       </ul>
     </nav>
   );
