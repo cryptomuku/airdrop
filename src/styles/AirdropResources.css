@@ -61,7 +61,7 @@
   .card {
     display: block;
     /* background: #2a3435; */
-    border:1px solid #0B46A4;  
+    border: 1px solid rgb(44 212 217 / .25);  
     border-radius: 8px;
     margin-bottom: 1rem;
     padding: 1rem;
