@@ -1,0 +1,204 @@
+.blog-section-unique.et_pb_row_unique {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    background: #1c2526;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .et_pb_column_unique {
+    flex: 1;
+  }
+  
+  .et_pb_column_2_3_unique {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .et_pb_column_1_3_unique {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .et_pb_module_unique.dgbm_blog_module_unique {
+    border: 1px solid #3a4445;
+    border-radius: 8px;
+    padding: 1rem;
+    /* background: #2a3435; */
+  }
+  
+  .dg-blog-module-unique {
+    width: 100%;
+  }
+  
+  .dg-blog-inner-wrapper-unique.full-width-unique {
+    width: 100%;
+  }
+  
+  .et_pb_ajax_pagination_container_unique {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .dgbm_post_item_unique.v2_unique {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* background: #3a4445; */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .dgbm_post_item_unique.v2_unique:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dg-post-thumb-unique {
+    position: relative;
+  }
+  
+  .post-meta-unique.post-meta-over-image-unique.over-image-top-unique {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .post-meta-unique .published-unique {
+    color: #e6ebf6;
+    font-size: 0.5rem;
+    text-align: left;
+  }
+  
+  .meta-icon-unique {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 0.25rem;
+    /* यहाँ एक आइकन जोड़ा जा सकता है, जैसे कि एक कैलेंडर आइकन */
+  }
+  
+  .featured-image-link-unique img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .content-wrapper-unique {
+    /* padding: 1rem; */
+    text-align: left;
+  }
+  
+  .dg_bm_title_unique a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e6ebf6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .dg_bm_title_unique a:hover {
+    color: #2cd4d9;
+  }
+  
+  /* साइडबार पोस्ट्स */
+  .image-left-unique .dgbm_post_item_unique.v2_unique {
+    flex-direction: row;
+    gap: 1rem;
+    height: 60px; /* फिक्स हाइट सेट करें */
+    width: 100%; /* पूरी चौड़ाई लें */
+    align-items: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  .column-image-unique {
+    flex: 0 0 60px; /* इमेज की फिक्स चौड़ाई */
+    height: 100%; /* पूरी हाइट लें */
+  }
+  
+  .column-content-unique {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* पूरी हाइट लें */
+  }
+  
+  .image-left-unique .dg-post-thumb-unique {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-left-unique .dg-post-thumb-unique img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* इमेज को फिट करें */
+    border-radius: 4px;
+  }
+  
+  .image-left-unique .dg_bm_title_unique a {
+    font-size: 0.6rem;
+    text-align: left;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* टेक्स्ट को 2 लाइन्स तक सीमित करें */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .post-meta-unique.post-meta-position-bottom-unique {
+    margin-top: 0.25rem;
+    font-size: 0.6rem;
+  }
+  
+  /* रेस्पॉन्सिव डिज़ाइन */
+  @media (max-width: 768px) {
+    .blog-section-unique.et_pb_row_unique {
+      padding: 1rem;
+    }
+  
+    .et_pb_column_2_3_unique,
+    .et_pb_column_1_3_unique {
+      flex: 1 0 100%;
+      min-width: 100%;
+    }
+  
+    .image-left-unique .dgbm_post_item_unique.v2_unique {
+      flex-direction: column;
+      height: auto; /* मोबाइल पर हाइट ऑटो करें */
+    }
+  
+    .column-image-unique {
+      flex: 1 0 auto;
+      height: 150px; /* मोबाइल पर इमेज की हाइट फिक्स करें */
+    }
+  
+    .column-content-unique {
+      height: auto; /* मोबाइल पर हाइट ऑटो करें */
+    }
+  
+    .image-left-unique .dg-post-thumb-unique img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .dg_bm_title_unique a {
+      font-size: 1.3rem;
+    }
+  
+    .image-left-unique .dg_bm_title_unique a {
+      font-size: 1rem;
+      -webkit-line-clamp: 3; /* मोबाइल पर 3 लाइन्स तक टेक्स्ट दिखाएँ */
+    }
+  }

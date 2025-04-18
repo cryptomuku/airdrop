@@ -103,7 +103,7 @@ function Home() {
 
       <AirdropResources />
       
-      {/* मौजूदा Featured Airdrops सेक्शन */}
+
       <section className="featured-section">
       <AirdropSlider />
       </section>

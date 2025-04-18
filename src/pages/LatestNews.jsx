@@ -1,10 +1,17 @@
 import '../styles/LatestNews.css';
+import AirdropSlider from '../components/AirdropSlider.jsx';
+import BlogSection from '../components/BlogSection';
+import ErrorBoundary from '../components/ErrorBoundary';
+
 
 function LatestNews() {
   return (
     <div className="latest-news">
-      <h1>Latest News</h1>
-      <p>Read more on our blog about crypto and airdrops.</p>
+       <AirdropSlider />
+       <ErrorBoundary componentName="BlogSection">
+        <BlogSection />
+      </ErrorBoundary>
+
     </div>
   );
 }
